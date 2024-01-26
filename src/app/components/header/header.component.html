@@ -1,0 +1,21 @@
+<div class="header">
+  <ng-container *ngIf="!authService.isAuthenticated()">
+    <button class="header__sign-in" mat-raised-button (click)="onLogin()">
+      <div class="inner">
+        <img class="signImg" src="assets/images/login/login.png" alt="login" />
+        <div>Sign in</div>
+      </div>
+    </button>
+  </ng-container>
+  <ng-container *ngIf="authService.isAuthenticated()">
+    <button class="header__logout" mat-raised-button (click)="onLogout()">
+      <div class="inner">
+        <img class="signImg" src="assets/images/login/login.png" alt="logout" />
+        <div>Logout</div>
+      </div>
+    </button>
+    <div class="header__profile-icon">
+      <img src="assets/images/login/profile.png" alt="profile" />
+    </div>
+  </ng-container>
+</div>

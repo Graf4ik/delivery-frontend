@@ -1,0 +1,10 @@
+<div *ngIf="meals.length" class="clear" (click)="clear()">
+  <div class="clear-container">Clear favorites <mat-icon>delete</mat-icon></div>
+</div>
+<div class="favorites">
+  <product-item *ngFor="let food of meals" [meal]="food"></product-item>
+  <div *ngIf="!meals.length" class="empty">
+    <h2>You don't have a favorite dish yet, you can add it here</h2>
+    <button class="btn-back" (click)="toMain()">Back to main</button>
+  </div>
+</div>

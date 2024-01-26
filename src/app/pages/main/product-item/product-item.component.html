@@ -1,0 +1,19 @@
+<div class="card" (dblclick)="openModalDetails()">
+  <div class="favorite-button">
+    <app-favorite-button
+      [isClicked]="checkFavorite(meal.id)"
+      (clickFavorite)="setFavourite(meal.id)"
+    ></app-favorite-button>
+  </div>
+  <div class="card-img">
+    <img src="{{ meal.pictureUrl }}" alt="mealPicture" />
+  </div>
+  <div class="card-content">
+    <div class="info">
+      <p class="title">{{ meal.title }}</p>
+    </div>
+  </div>
+  <div class="card-footer">
+    <div class="price">$ {{ meal.price }}</div>
+  </div>
+</div>

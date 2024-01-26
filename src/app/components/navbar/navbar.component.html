@@ -1,0 +1,13 @@
+<div class="navbar">
+  <div class="navbar-list">
+    <div *ngFor="let item of menuItems" class="navbar-list__item">
+      <a
+        routerLinkActive="active"
+        [routerLink]="item.path"
+        [routerLinkActiveOptions]="{ exact: true }"
+      >
+        <mat-icon>{{ item.icon }}</mat-icon>
+      </a>
+    </div>
+  </div>
+</div>

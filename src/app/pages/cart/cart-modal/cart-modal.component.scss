@@ -1,0 +1,41 @@
+@import "src/assets/styles/variables";
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+
+  .title {
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 5%;
+
+    .orderNumber {
+      color: $primary-color;
+      margin-top: 5px;
+      font-size: 30px;
+    }
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: space-around;
+
+    .button {
+      background: $primary-color;
+      color: #fff;
+      width: 30%;
+      text-align: center;
+      font-weight: 700;
+      font-size: 16px;
+      border-radius: 10px;
+      border: none;
+      outline: none;
+      padding: 15px;
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,35 @@
+@import "assets/styles/variables";
+@import '@angular/cdk/overlay-prebuilt.css';
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  //background: #fffbf4;
+  font-family: Roboto,
+  "Helvetica Neue", sans-serif;
+}
+
+.mat-mdc-simple-snack-bar {
+  background: #0b8823 !important;
+  margin-right: -8px;
+}
+
+.mat-mdc-progress-spinner .mdc-circular-progress__determinate-circle,
+.mat-mdc-progress-spinner .mdc-circular-progress__indeterminate-circle-graphic {
+  stroke: $primary-color !important;
+}
+
+
+.mdc-text-field--outlined .mdc-notched-outline__leading {
+  border-color: $primary-color !important;
+}
+
+
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

@@ -1,0 +1,47 @@
+<div class="filter">
+  <div class="categories">
+    <div
+      class="category-item"
+      (click)="handleFilter(mealTypes.BURGERS)"
+      [class.active]="type === mealTypes.BURGERS"
+    >
+      <img src="assets/images/burger.svg" alt="burger" />
+    </div>
+    <div
+      class="category-item"
+      (click)="handleFilter(mealTypes.PIZZA)"
+      [class.active]="type === mealTypes.PIZZA"
+    >
+      <img src="assets/images/pizza.svg" alt="pizza" />
+    </div>
+    <div
+      class="category-item"
+      (click)="handleFilter(mealTypes.TACO)"
+      [class.active]="type === mealTypes.TACO"
+    >
+      <img src="assets/images/taco.svg" alt="taco" />
+    </div>
+    <div
+      class="category-item"
+      (click)="handleFilter(mealTypes.DRINKS)"
+      [class.active]="type === mealTypes.DRINKS"
+    >
+      <img src="assets/images/smoothie.svg" alt="drinks" />
+    </div>
+  </div>
+  <div class="categories-all">
+    <button
+      class="categories-btn"
+      mat-stroked-button
+      color="accent"
+      (click)="handleFilter(mealTypes.All)"
+      [class.active]="type === mealTypes.All"
+    >
+      @if (type === mealTypes.All) {
+        <span>Hide all</span>
+      } @else {
+        <span>View all</span>
+      }
+    </button>
+  </div>
+</div>

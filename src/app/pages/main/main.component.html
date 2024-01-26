@@ -1,0 +1,7 @@
+<div class="main">
+  <app-search (search)="onSearch($event)"></app-search>
+  <app-filter (filter)="onFilter($event)"></app-filter>
+  <div class="product-list">
+    <product-item *ngFor="let item of filteredMeals" [meal]="item"></product-item>
+  </div>
+</div>

@@ -1,0 +1,132 @@
+[
+  {
+    "id":"1",
+    "category":"burgers",
+    "title":"Маминькин Сынок",
+    "subtitle":"Вегетарианский бургер на растительном мясе",
+    "price":"10",
+    "size":[
+      "s",
+      "m",
+      "l"
+    ],
+    "pictureUrl":"/assets/images/burgers/burger1.png"
+  },
+  {
+    "id":"2",
+    "category":"burgers",
+    "title":"Большой Дядя",
+    "subtitle":"Бургер с говядиной",
+    "price":"11",
+    "size":[
+      "s",
+      "m",
+      "l"
+    ],
+    "pictureUrl":"/assets/images/burgers/burger4.png"
+  },
+  {
+    "id":"3",
+    "category":"burgers",
+    "title":"Сырный Олег",
+    "subtitle":"Бургер со свиной котлетой и с добавлением сыра",
+    "price":"12.5",
+    "size":[
+      "s",
+      "m",
+      "l"
+    ],
+    "pictureUrl":"/assets/images/burgers/burger3.png"
+  },
+  {
+    "id":"4",
+    "category":"pizza",
+    "title":"Помидорная Маргарита",
+    "subtitle":"Маргарита с двойной порцией помидоров",
+    "price":"20",
+    "size":[
+      "s",
+      "m",
+      "l"
+    ],
+    "pictureUrl":"/assets/images/pizza/pizza-margorita.png"
+  },
+  {
+    "id":"5",
+    "category":"pizza",
+    "title":"4 Сыра",
+    "subtitle":"Пицца с четыремя видами сыра",
+    "price":"15",
+    "size":[
+      "s",
+      "m",
+      "l"
+    ],
+    "pictureUrl":"/assets/images/pizza/pizza-4.png"
+  },
+  {
+    "id":"6",
+    "category":"pizza",
+    "title":"Мексиканская",
+    "subtitle":"Пицца с добавлением острого перца",
+    "price":"17.99",
+    "size":[
+      "s",
+      "m",
+      "l"
+    ],
+    "pictureUrl":"/assets/images/pizza/pizza-mexicano.jpg"
+  },
+  {
+    "id":"7",
+    "category":"taco",
+    "title":"Острое тако",
+    "subtitle":"Паста с морепродуктами",
+    "price":"14",
+    "size":[
+      "s",
+      "m",
+      "l"
+    ],
+    "pictureUrl":"/assets/images/taco/taco.png"
+  },
+  {
+    "id":"8",
+    "category":"taco",
+    "title":"Куринная шаурма",
+    "subtitle":"Вкусное мясо курицы",
+    "price":"8",
+    "size":[
+      "s",
+      "m",
+      "l"
+    ],
+    "pictureUrl":"/assets/images/taco/chiken-shawarma.png"
+  },
+  {
+    "id":"9",
+    "category":"taco",
+    "title":"Вегетарианская шаурма",
+    "subtitle":"Для вегетарианцев и любителей овощей",
+    "price":"11",
+    "size":[
+      "s",
+      "m",
+      "l"
+    ],
+    "pictureUrl":"/assets/images/taco/vegeterian-shawarma.png"
+  },
+  {
+    "id":"10",
+    "category":"drinks",
+    "title":"Coca-cola",
+    "subtitle":"Просто Кола!",
+    "price":"3",
+    "size":[
+      "s",
+      "m",
+      "l"
+    ],
+    "pictureUrl":"/assets/images/drinks/coca-cola-ml.png"
+  }
+]

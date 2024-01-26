@@ -1,0 +1,51 @@
+@import "src/assets/styles/variables";
+
+.filter {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+
+  .categories {
+    display: flex;
+    justify-content: space-between;
+
+    .category-item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      padding: 10px;
+      border-radius: 8px;
+      margin-right: 5px;
+      width: 22%;
+      height: 140px;
+      box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
+
+      img {
+        width: 100px;
+        height: 100px;
+      };
+    }
+
+    .active {
+      background: #fbc1a1;
+      border: 3px solid $primary-color;
+    }
+  }
+
+  .categories-all {
+    display: flex;
+    justify-content: flex-end;
+
+    .categories-btn {
+      margin-top: 10px;
+      width: 160px;
+      color: $primary-color;
+      font-weight: 700;
+      cursor: pointer;
+    }
+  }
+}
+
+
+

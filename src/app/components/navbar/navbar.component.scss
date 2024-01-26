@@ -1,0 +1,33 @@
+@import "src/assets/styles/variables";
+
+.navbar {
+  position: fixed;
+  bottom: 4px;
+  padding: 15px;
+  z-index: 289;
+  max-width: 950px;
+  width: 100%;
+  border-radius: 15px;
+  background: #fff;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
+
+
+  .navbar-list {
+    display: flex;
+    justify-content: space-between;
+
+    &__item {
+      a {
+        text-decoration: none;
+        cursor: pointer;
+        color: #000;
+      }
+
+      .active {
+        color: $primary-color;
+      }
+    }
+  }
+
+
+}

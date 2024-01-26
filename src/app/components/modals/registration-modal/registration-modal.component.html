@@ -1,0 +1,38 @@
+<form class="register-form" [formGroup]="registrationForm">
+  <mat-icon>close</mat-icon>
+  <h1 class="title">Registration</h1>
+  <mat-form-field class="example-full-width">
+    <mat-label>Email</mat-label>
+    <input
+      type="email"
+      matInput
+      formControlName="email"
+      placeholder="Enter email"
+      appearance="fill"
+    />
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width">
+    <mat-label>Password</mat-label>
+    <input
+      type="password"
+      matInput
+      formControlName="password"
+      placeholder="Enter password"
+      appearance="fill"
+    />
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width">
+    <mat-label>FullName</mat-label>
+    <input
+      type="text"
+      matInput
+      formControlName="fullName"
+      placeholder="Enter your name"
+      appearance="fill"
+    />
+  </mat-form-field>
+
+  <button class="register-btn" mat-raised-button (click)="register()">Register</button>
+</form>

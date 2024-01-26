@@ -1,0 +1,23 @@
+@import "variables";
+
+.title {
+  color: $primary-color;
+  font-weight: bold;
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 60%;
+  margin-left: 20%;
+  height: 600px;
+
+  .register-btn {
+    color: white;
+    background: $primary-color;
+  }
+}

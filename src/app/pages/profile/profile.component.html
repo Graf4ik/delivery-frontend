@@ -1,0 +1,46 @@
+<div class="profile">
+  <div class="avatar">
+    <div>{{ nameControl?.value.charAt(0) }}</div>
+  </div>
+  <div class="profile-info" [formGroup]="profileForm">
+    <div class="name">
+      <input
+        #name
+        class="input-name"
+        type="text"
+        formControlName="name"
+        (keydown)="change($event)"
+      />
+    </div>
+    <div class="actions">
+      <mat-card class="actions-item" (click)="editProfile()">
+        <mat-card-content class="text">
+          @if (!editing) {
+            <span>Edit Name</span>
+          } @else {
+            <span>Cancel editing</span>
+          }
+          <mat-icon>edit</mat-icon>
+        </mat-card-content>
+      </mat-card>
+      <mat-card class="actions-item" (click)="toFavorites()">
+        <mat-card-content class="text">
+          <span>Favorites</span>
+          <mat-icon>favorite</mat-icon>
+        </mat-card-content>
+      </mat-card>
+      <mat-card class="actions-item">
+        <mat-card-content class="text">
+          <span>Order History</span>
+          <mat-icon>list alt</mat-icon>
+        </mat-card-content>
+      </mat-card>
+      <mat-card class="actions-item">
+        <mat-card-content class="text">
+          <span>Settings</span>
+          <mat-icon>settings</mat-icon>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+</div>

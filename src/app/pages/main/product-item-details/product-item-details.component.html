@@ -1,0 +1,29 @@
+<div class="details">
+  <div class="details-inner">
+    <div class="close" (click)="close()">
+      <mat-icon>close</mat-icon>
+    </div>
+    <img class="card-img" src="{{ meal.pictureUrl }}" alt="mealPicture" />
+    <div class="card-content">
+      <p class="title">{{ meal.title }}</p>
+      <div class="info">
+        <h2>Информация</h2>
+        <p>{{ meal.subtitle }}</p>
+      </div>
+    </div>
+  </div>
+  <div class="toCard">
+    <div class="counter">
+      <button class="decrement" mat-mini-fab (click)="onDecrement()" [disabled]="count <= 1">
+        <mat-icon>remove</mat-icon>
+      </button>
+      <span class="counter_value">{{ count }}</span>
+      <button class="increment" mat-mini-fab (click)="onIncrement()">
+        <mat-icon>add</mat-icon>
+      </button>
+    </div>
+    <button class="add-card-btn" (click)="addToCard()">
+      <span>Order {{ count }} for {{ meal.price * count }}$</span>
+    </button>
+  </div>
+</div>

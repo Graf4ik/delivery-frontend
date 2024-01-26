@@ -1,0 +1,27 @@
+<form class="login-form" [formGroup]="loginForm">
+  <mat-icon>close</mat-icon>
+  <h2 class="title">Login</h2>
+  <mat-form-field class="example-full-width">
+    <mat-label>Email</mat-label>
+    <input
+      type="email"
+      matInput
+      formControlName="email"
+      placeholder="Enter email"
+      appearance="fill"
+    />
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <mat-label>Password</mat-label>
+    <input
+      type="password"
+      matInput
+      formControlName="password"
+      placeholder="Enter password"
+      appearance="fill"
+    />
+  </mat-form-field>
+
+  <button class="login-btn" mat-raised-button (click)="login()">Login</button>
+  <div class="login-help">New here? <span class="signup" (click)="onSignUp()">Sign up</span></div>
+</form>

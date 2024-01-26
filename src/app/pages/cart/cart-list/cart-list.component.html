@@ -1,0 +1,49 @@
+<ng-container *ngIf="loading">
+  <div class="spinner">
+    Process payment...
+    <mat-spinner></mat-spinner>
+  </div>
+</ng-container>
+<div *ngIf="!loading" class="cart-container">
+  <h2 *ngIf="!cartItems.length" class="empty">
+    Your cart is empty
+    <mat-icon>delete</mat-icon>
+  </h2>
+  <div class="cart" *ngIf="cartItems.length !== 0">
+    <div class="cart-list">
+      <cart-item
+        *ngFor="let cartItem of cartItems"
+        [cartItem]="cartItem"
+        (deleteRecord)="deleteCartItem($event)"
+      ></cart-item>
+    </div>
+    <div class="cheque">
+      <hr class="separate-line" />
+      <div class="cheque-item">
+        <span>Item Total:</span>
+        <span
+          ><strong>{{ totalItem }}$</strong></span
+        >
+      </div>
+      <div class="cheque-item">
+        <span>Delivery Charge:</span>
+        <span
+          ><strong>{{ deliveryCharge }}$</strong></span
+        >
+      </div>
+      <div class="cheque-item">
+        <span>Tax:</span>
+        <span
+          ><strong>{{ tax }}$</strong></span
+        >
+      </div>
+      <div class="cheque-item big">
+        <span>Total:</span>
+        <span
+          ><strong>{{ total }}$</strong></span
+        >
+      </div>
+    </div>
+    <button class="cart-button" (click)="toPay()">TO PAY</button>
+  </div>
+</div>
